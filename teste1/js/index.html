@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+  <form action="/processar-formulario" method="post">  
+  <h3>
+        <label for="idNome">Nome Completo</label>
+        <input type="text" id="nome" name="nome">
+        </h3>
+        
+        <h3>
+        
+        <label for="idEmail">E-mail</label>
+        <input type="email" id="email" name="email"><br><br>
+        </h3>
+
+        <h3>
+        <label for="idTelefone">Telefone</label>
+        <input type="tel" name="tel"><br><br>
+
+        
+        <h3>
+        <label for="idDataDeNascimento">Data de Nascimento</label>
+        <input type="date" name="date"><br><br>
+        </h3>
+        
+    <h3> 
+              <label for="idGenero">Gênero</label><br>
+    </h3>
+        <h5>
+             <table> 
+                <thead>
+            <tbody>
+                <tr> 
+            <input type="radio" id="mulhercis" name="genero" value="mulhercis">Mulher Cisgênero 
+             <input type="radio" id="homemcis" name="genero" value="homemcis">Homem Cisgênero <br>  
+             <input type="radio" id="mulhertrans" name="genero" value="mulhertrans">Mulher Transgênero
+                </tr>
+            <tr>
+           <input type="radio" id="homemtrans" name="genero" value="homemtrans">Homem Transgênero<br> 
+            <input type="radio" id="naobinario" name="genero" value="naobinario">Não-binário  
+             <input type="radio" id="prefironaoresponder" name="genero" value="prefironaoresponder">Prefiro não responder
+            </tr>
+        </tbody>
+    </thead>
+        </table>
+        </h5>
+
+          <h3>   <label for="idInscricao">Tipo de Inscrição</label>
+            <select id="idInscricao" name="inscricao">
+                <option  value="palestrante">Palestrante</option>
+                <option  value="voluntario">Voluntário</option>
+                <option  value="participante">Participante</option>
+                <option  value="examinador">Banca Examinadora</option>
+                <option  value="empresa">Empresa Participante</option>
+                <option  value="outro">Outro</option>
+            </select>
+            </h3>
+<h3> 
+               
+                    <label for="idMensagem">Mensagem: </label><br>
+                </div>
+                    <textarea name="mensagem" id="mensagem" rows="6" cols="25" maxlength="200"></textarea>
+               
+            </h3>
+            
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar Formulário">
+           
+    
+    </form>
+   
+</body>
+</html>
